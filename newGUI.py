@@ -6,6 +6,8 @@ def doNothing():
 
 root = Tk()
 
+# ============= Main Menu ==================
+
 menu = Menu(root)
 root.config(menu=menu)
 
@@ -19,5 +21,19 @@ subMenu.add_command(label="Exit", command=quit)
 editMenu = Menu(menu)
 menu.add_cascade(label="Edit", menu=editMenu)
 editMenu.add_command(label="Redo", command=doNothing)
+
+# ============= Toolbar ==================
+
+toolbar = Frame(root, bg="blue")
+
+insertButt = Button(toolbar, text="Insert Image", command=doNothing)
+insertButt.pack(side=LEFT, padx=2, pady=2)
+printButt = Button(toolbar, text="Print", command=doNothing)
+printButt.pack(side=LEFT, padx=2, pady=2)
+
+toolbar.pack(side=TOP, fill=X)
+
+# ============= Status Bar ==================
+
 
 root.mainloop()
