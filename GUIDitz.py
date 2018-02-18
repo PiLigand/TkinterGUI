@@ -11,9 +11,9 @@ class TomsButtons:
 
 		self.quitButton = Button(self.frame, text="Quit", command=self.frame.quit)
 		self.quitButton.pack(side=LEFT)
-	
+
 	def printMessage(self):
-		print "wow, this worked!"
+		print ("wow, this worked!")
 
 
 root = Tk()
