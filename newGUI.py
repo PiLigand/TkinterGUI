@@ -1,8 +1,8 @@
-from Tkinter import *
-import Tkinter.messagebox
+from tkinter import *
+import tkinter.messagebox
 
 def doNothing():
-	print "Nothing Done."
+	print ("Nothing Done.")
 
 root = Tk()
 
