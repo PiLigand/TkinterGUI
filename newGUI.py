@@ -1,5 +1,5 @@
 from Tkinter import *
-
+import Tkinter.messagebox
 
 def doNothing():
 	print "Nothing Done."
@@ -35,5 +35,11 @@ toolbar.pack(side=TOP, fill=X)
 
 # ============= Status Bar ==================
 
+status = Label(root, text="Preparing to do nothing...", bd=1, relief=SUNKEN, anchor=W) #west anchor
+status.pack(side=BOTTOM, fill=X)
+
+# ============= Message Boxes ==================
+
+tkinter.messagebox.showinfo("Window Title", "My window message")
 
 root.mainloop()
